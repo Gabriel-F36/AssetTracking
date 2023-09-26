@@ -12,6 +12,7 @@ namespace Asset_tracking_1
         {
 
         }
+        // Constructor
         public Product(string brand, string model, string office, string purchaseDate, string currency, int price)
         {
             Brand = brand;
@@ -21,7 +22,7 @@ namespace Asset_tracking_1
             Currency = currency;
             Price = price;
         }
-
+        // Get and set for all variables
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Office { get; set; }

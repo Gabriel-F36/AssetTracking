@@ -5,6 +5,8 @@ using Asset_tracking_1;
 using System.Diagnostics;
 using System.Reflection;
 
+// creating a set list of products
+
 List<Product> productList = new List<Product>();
 productList.Add(new Laptop("HP", "Elitebook", "Sweden", "2020-10-2", "SEK", 588));
 productList.Add(new Laptop("Asus", "W234", "USA", "2017-4-21", "USD", 1200));
@@ -19,6 +21,8 @@ productList.Add(new MobilePhone("Motorola", "Razr", "Sweden", "2020-3-16", "SEK"
 
 List<Product> productListOrder = productList.OrderBy(x => x.GetType().Name).ToList();
 List<Product> productListOrderOffice = productList.OrderBy(x => x.Office).ThenBy(y => y.PurchaseDate).ToList();
+
+// printing tableformat and all content
 
 Console.WriteLine("Type".PadRight(15) + "Brand".PadRight(15) + "Model".PadRight(15) + "Office".PadRight(15) +
     "Purchase Date".PadRight(15) + "Price (USD)".PadRight(15) + "Currency".PadRight(15) + "Local price");
