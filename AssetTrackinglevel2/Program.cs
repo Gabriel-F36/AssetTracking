@@ -13,16 +13,16 @@ AddProduct addProduct = new AddProduct();
 
 // creating a set list of products, mostly for testing purposes
 
-productList.Add(new Computer("HP", "Elitebook", "Sweden", "2020-10-02", "SEK", 588));
-productList.Add(new Computer("Asus", "W234", "USA", "2017-04-21", "USD", 1200));
-productList.Add(new Computer("Lenovo", "Yoga 730", "USA", "2018-05-28", "USD", 835));
-productList.Add(new Computer("Lenovo", "Yoga 730", "USA", "2019-05-21", "USD", 1030));
-productList.Add(new Computer("HP", "Elitebook", "Spain", "2019-06-01", "EUR", 1423));
+//productList.Add(new Computer("HP", "Elitebook", "Sweden", "2020-10-02", "SEK", 588));
+//productList.Add(new Computer("Asus", "W234", "USA", "2017-04-21", "USD", 1200));
+//productList.Add(new Computer("Lenovo", "Yoga 730", "USA", "2018-05-28", "USD", 835));
+//productList.Add(new Computer("Lenovo", "Yoga 730", "USA", "2019-05-21", "USD", 1030));
+//productList.Add(new Computer("HP", "Elitebook", "Spain", "2019-06-01", "EUR", 1423));
 
-productList.Add(new Phone("iPhone", "8", "Spain", "2018-12-29", "EUR", 970));
-productList.Add(new Phone("iPhone", "11", "Spain", "2020-09-25", "EUR", 990));
-productList.Add(new Phone("iPhone", "X", "Sweden", "2018-07-15", "SEK", 1245));
-productList.Add(new Phone("Motorola", "Razr", "Sweden", "2020-03-16", "SEK", 970));
+//productList.Add(new Phone("iPhone", "8", "Spain", "2018-12-29", "EUR", 970));
+//productList.Add(new Phone("iPhone", "11", "Spain", "2020-09-25", "EUR", 990));
+//productList.Add(new Phone("iPhone", "X", "Sweden", "2018-07-15", "SEK", 1245));
+//productList.Add(new Phone("Motorola", "Razr", "Sweden", "2020-03-16", "SEK", 970));
 
 string typeName;
 
