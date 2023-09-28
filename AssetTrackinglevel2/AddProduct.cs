@@ -32,7 +32,7 @@ namespace AssetTrackinglevel2
             string curreny = Console.ReadLine().ToUpper();
 
         tryPrice:
-            Console.Write("Price: ");            
+            Console.Write("Price (in USD): ");            
             string price = Console.ReadLine();
             if (!int.TryParse(price, out int value))
             {
@@ -61,9 +61,20 @@ namespace AssetTrackinglevel2
                 new AppMessages().TryAgainDate();
                 goto tryDate;
             }
+        tryCurrency:
+            Console.Write("Curreny (USD, EUR, SEK available): ");
+            string currency = Console.ReadLine().ToUpper();
+            string currencyTest = currency.ToLower().Trim();
+            if (currencyTest == "eur" || currencyTest == "usd" || currencyTest == "sek")
+            {
+                
+            }
+            else
+            {
+                new AppMessages().CurrencyNotFound();
+                goto tryCurrency;
+            }
 
-            Console.Write("Curreny: ");
-            string curreny = Console.ReadLine().ToUpper();
 
         tryPrice:
             Console.Write("Price: ");
@@ -75,7 +86,7 @@ namespace AssetTrackinglevel2
             }
 
 
-            list.Add(new Phone(brand, model, office, date, curreny, value));
+            list.Add(new Phone(brand, model, office, date, currency, value));
         }
     }
 }

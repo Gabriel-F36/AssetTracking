@@ -29,10 +29,16 @@ namespace AssetTrackinglevel2
             Console.ResetColor();
 
         }
-        public void successfulAdd()
+        public void SuccessfulAdd()
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Product added successfully");
+            Console.ResetColor();
+        }
+        public void CurrencyNotFound()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("Currency not found");
             Console.ResetColor();
         }
     }
