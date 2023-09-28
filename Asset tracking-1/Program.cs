@@ -8,6 +8,7 @@ using System.Reflection;
 // creating a set list of products
 
 List<Product> productList = new List<Product>();
+
 productList.Add(new Laptop("HP", "Elitebook", "Sweden", "2020-10-2", "SEK", 588));
 productList.Add(new Laptop("Asus", "W234", "USA", "2017-4-21", "USD", 1200));
 productList.Add(new Laptop("Lenovo", "Yoga 730", "USA", "2018-5-28", "USD", 835));

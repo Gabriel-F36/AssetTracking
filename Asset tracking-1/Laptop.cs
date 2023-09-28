@@ -10,7 +10,7 @@ namespace Asset_tracking_1
     {
         public Laptop(string brand, string model, string office, string purchaseDate, string currency, int price) : base(brand, model, office, purchaseDate, currency, price)
         {
-
+            
         }
     }
 }
